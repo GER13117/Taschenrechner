@@ -53,8 +53,9 @@ public class Taschenrechner {
         System.out.println("5. Den Bruch aus zwei Zahlen rechnen");
         System.out.println("6. Die Potenz von einer Zahl berechnen");
         System.out.println("7. Modulo einer Zahl");
+        System.out.println("8. Schließe das Programm");
 
-        //Noch switch case bauen
+        //Menü zum Wählen der verschiedenen Operation
         Scanner scan = new Scanner(System.in);
         int chooseCalc = scan.nextInt();
         switch (chooseCalc){
@@ -79,6 +80,9 @@ public class Taschenrechner {
             case 7:
                 modulo();
                 break;
+            case 8:
+                System.out.println("Okay, schönen Tag noch.");
+                System.exit(0);
             default:
                 System.out.println("Bitte geben sie eine valide Nummer ein!");
                 whichCalculation();
