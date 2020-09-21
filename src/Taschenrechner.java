@@ -18,7 +18,7 @@ public class Taschenrechner {
         System.out.println("\"/\" als Geteilt-Rechenzeichen");
         System.out.println("\"^\" als Potenz-Rechenzeichen");
         System.out.println("!WICHTIG! - Zwischen Zahl und Rechenzeichen IMMER ein Leerzeichen - !WICHTIG!");
-        System.out.println("---------------");
+        System.out.println("----------------");
         Scanner scanner = new Scanner(System.in);
         String hii = scanner.nextLine();
         String[] eingabe = hii.split(" ");
