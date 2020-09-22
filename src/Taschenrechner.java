@@ -4,6 +4,10 @@ public class Taschenrechner {
         scannMich();
     }
     public static void scannMich(){//Scannt Eingabe
+        //TODO: Klammern funktionierend machen
+        //TODO: Wurzeln, Fakultät, CLR, Brüche, Modulo, pi
+        //TODO: Displaylike, ASCII Art ?
+
         System.out.println("");
         System.out.println("---------------");
         System.out.println("Bitte Rechnung eingeben:");
@@ -20,7 +24,7 @@ public class Taschenrechner {
         Rechnen(eingabe);
     }
 
-    public static boolean zuruck(String[] eingabe, int zahl){
+    public static boolean zurueck(String[] eingabe, int zahl){
         switch(eingabe[zahl]){//Testet welches das erste Rechenzeichen ist.
             case "+":
                 break;
@@ -49,7 +53,7 @@ public class Taschenrechner {
         double zahl2 = 0;
         while(eingabe.length>2){
             zahl = 1;
-            while(!zuruck(eingabe, zahl)){//Testet ob er rechnen darf(Punkt vor strich)
+            while(!zurueck(eingabe, zahl)){//Testet ob er rechnen darf(Punkt vor strich)
                 zahl = zahl + 2;
             }
             zahl1 = Double.valueOf(eingabe[zahl-1]);
