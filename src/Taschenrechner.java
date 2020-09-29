@@ -5,7 +5,7 @@ public class Taschenrechner {
     }
     public static void scannMich(){//Scannt Eingabe
         //TODO: Klammern funktionierend machen
-        //TODO: Wurzeln, Fakultät, CLR, Brüche, Modulo, pi, Ans
+        //TODO: Wurzeln, Fakultät, CLR, Brüche, Modulo, pi
         //TODO: Displaylike, ASCII Art ?
 
         System.out.println("");
